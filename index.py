@@ -5,7 +5,7 @@ app = Flask(__name__, static_folder="static")
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('frontend.html')
 
 @app.route('/get_response', methods=['POST'])
 def get_response():
